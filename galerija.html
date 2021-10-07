@@ -6,7 +6,7 @@
 
         <style>
          
-         html, body, .container-fluid, .row {
+         html, body, .container-fluid {
          height: 100%;
         }        
 
@@ -15,7 +15,7 @@
     </head>
     <body>
         <div class="container-fluid" style="background-color: darkgreen;"> <!-- vrb saite row organizācijai https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout -->
-            <div class="row">
+            <div class="row h-100">
               <div class="col-1" style="background-color: rgb(191, 191, 191);"> <!-- klases -->
                 <p style="text-align:left; font-size: 200%; font-family: Garamond; ">
                   11.B
@@ -33,9 +33,21 @@
               </div>
 
               <div class="col-9" style="background-color: rgb(255, 255, 255);"> <!-- bilde ar aprakstu -->
-                <p style="text-align: center; font-size: 200%; font-family: Garamond; ">
-                Doma šajā row ielikt 2 row - vienā bilde un otrā teksts.
-                </p>
+
+                <div class="row" style="height: 10%;">
+                  Doma šajā row ielikt 3 row - vienā bilde
+                </div>
+              <div class="row" style="background-color: rgb(170, 170, 170); height: 90%;"> <!-- virsraksts -->
+                <div class="col-7" style="background-color: rgb(150, 150, 150);"> <!-- bilde -->
+                    pls help me
+                </div> 
+                <div class="col" style="background-color: rgb(200, 200, 200);"> <!-- apraksts -->
+                      pls help me 2
+                </div>
+              </div>
+                
+               
+
               </div>
             </div>
         </div>
