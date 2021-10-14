@@ -12,19 +12,21 @@
         p, h1, a, li, ul {
           font-family: Garamond;
           text-align:center;
-          font-size: 200%;
+          font-size: 2rem;
+          color: black
         }
         ul {
           list-style-type: none;
           margin: 0;
           padding: 0;
         } 
+      
         </style>    
 
         <script>
         function atvervardus11b(){
           document.getElementById("vardi").innerHTML='<ul> <li><a href="#">Shame</a></li> <li><a href="#">On</a></li> <li><a href="#">You</a></li> </ul>';
-          document.getElementById("vardi").style.backgroundColor="rgb(142, 241, 247)";
+          document.getElementById("vardi").style.backgroundColor="rgb(235, 235, 235)";
         }
         function atvervardus11c(){
           document.getElementById("vardi").innerHTML='<ul> <li><a href="#">Elīna Jurgeļeviča</a></li> <li><a href="#">On2</a></li> <li><a href="#">You2</a></li> </ul>'
@@ -37,7 +39,7 @@
     <body>
         <div class="container-fluid" style="background-color: darkgreen;"> <!-- vrb saite row organizācijai https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout -->
             <div class="row h-100">
-              <div class="col-1" style="background-color: rgb(235, 235, 235);"> <!-- klases -->
+              <div class="col-1" style="background-color: rgb(82, 246, 255 );"> <!-- klases -->
                 <ul>
                     <li><a href="#" onclick="atvervardus11b()">11.B</a></li>
 
@@ -48,7 +50,7 @@
                       
               </div>
 
-              <div class="col-2" id="vardi" style="background-color: rgb(235, 235, 235);"> <!-- skolēnu vārdi -->
+              <div class="col-2" id="vardi" style="background-color: rgb(142, 241, 247);"> <!-- skolēnu vārdi -->
                 <p style="text-align:center; font-size: 200%; font-family: Garamond;  ">
               </p>
               </div>
