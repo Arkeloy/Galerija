@@ -24,14 +24,19 @@
         </style>    
 
         <script>
+        function atvertElinu(){
+          document.getElementById("bilde").innerHTML='<p style="text-align: center;"><img src="./20211011_122635 - daddyelina.jpg" style="width: 70%;height: 70%;"></p>'
+          document.getElementById("text").innerHTML='<p style="text-align:center; font-size: 150%; font-family: Garamond;">Mana darba nosaukums ir "VS". Savā darbā es attēloju atšķirības starp veselīgo dzīvesveidu un neveselīgo dzīveseidu. Es šo darba tēmu izvēlējos, jo veselīgs dzīvesveids man ir ļoti tuva tēma un esmu ar viņu jau iepazinusies kopš bērnības. Mans mērķis ar šo darbu ir panākt to, lai cilvēki saredzētu šīs atšķirības un paši izteiktu savu secinājumu par zīmējumā redzēto, un ,iespējams, šo zīmējumu asociētu ar savu ikdienas dzīvi.</p>'
+        } 
+
         function atvervardus11b(){
           document.getElementById("vardi").innerHTML='<ul> <li><a href="#">Shame</a></li> <li><a href="#">On</a></li> <li><a href="#">You</a></li> </ul>';
-          document.getElementById("vardi").style.backgroundColor="rgb(235, 235, 235)";
+          document.getElementById("vardi").style.backgroundColor="rgb(142, 241, 247)";
         }
         function atvervardus11c(){
-          document.getElementById("vardi").innerHTML='<ul> <li><a href="#">Elīna Jurgeļeviča</a></li> <li><a href="#">On2</a></li> <li><a href="#">You2</a></li> </ul>'
+          document.getElementById("vardi").innerHTML='<ul> <li><a onclick="atvertElinu()" href="#">Elīna Jurgeļeviča</a></li> <li><a href="#">On2</a></li> <li><a href="#">You2</a></li> </ul>'
+          document.getElementById("vardi").style.backgroundColor="rgb(142, 241, 247)";
         }
-
       </script>
 
 
@@ -50,7 +55,7 @@
                       
               </div>
 
-              <div class="col-2" id="vardi" style="background-color: rgb(142, 241, 247);"> <!-- skolēnu vārdi -->
+              <div class="col-2" id="vardi" style="background-color: rgb(235, 235, 235);"> <!-- skolēnu vārdi -->
                 <p style="text-align:center; font-size: 200%; font-family: Garamond;  ">
               </p>
               </div>
@@ -64,11 +69,10 @@
                 </div>
               <div class="row" style="background-color: rgb(235, 235, 235); height: 90%;"> <!-- virsraksts -->
                 <div class="col-7" style="background-color: rgb(235, 235, 235);"> <!-- bilde -->
-                  <p style="text-align: center;"><img src="./20211011_122635 - daddyelina.jpg" style="width: 70%;height: 70%;"></p>
+                  <p style="text-align: center;" id="bilde"></p>
                 </div> 
                 <div class="col" style="background-color: rgb(235, 235, 235);"> <!-- apraksts -->
-                  <p style="text-align:center; font-size: 150%; font-family: Garamond;"> 
-                    Mana darba nosaukums ir "VS". Savā darbā es attēloju atšķirības starp veselīgo dzīvesveidu un neveselīgo dzīveseidu. Es šo darba tēmu izvēlējos, jo veselīgs dzīvesveids man ir ļoti tuva tēma un esmu ar viņu jau iepazinusies kopš bērnības. Mans mērķis ar šo darbu ir panākt to, lai cilvēki saredzētu šīs atšķirības un paši izteiktu savu secinājumu par zīmējumā redzēto, un ,iespējams, šo zīmējumu asociētu ar savu ikdienas dzīvi.
+                  <p style="text-align:center; font-size: 150%; font-family: Garamond;"id="text"> 
                   </p>
                 </div>
               </div>
